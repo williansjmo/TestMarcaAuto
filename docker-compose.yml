@@ -1,0 +1,6 @@
+services:
+  test.api:
+    image: ${DOCKER_REGISTRY-}testapi
+    build:
+      context: .
+      dockerfile: Test.Api/Dockerfile
